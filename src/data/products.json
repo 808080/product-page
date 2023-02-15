@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "iPhone 9"
+    },
+    "description": {
+      "en": "An apple mobile which is nothing like apple",
+      "ru": "Телефон"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "iPhone X"
+    },
+    "description": {
+      "en": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "ru": "Телефон без сим-карты"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Samsung Universe 9"
+    },
+    "description": {
+      "en": "Samsung's new variant which goes beyond Galaxy to the Universe",
+      "ru": "Описание на русском"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "OPPOF19"
+    },
+    "description": {
+      "en": "OPPO F19 is officially announced on April 2021."
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "Huawei P30"
+    },
+    "description": {
+      "en": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+      "ru": "Описание на русском"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg"
+  },
+  {
+    "id": 6,
+    "title": {
+      "en": "MacBook Pro",
+      "ru": "Мак про"
+    },
+    "description": {
+      "en": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+      "ru": "Мак Про 2021 with mini-LED display"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png"
+  },
+  {
+    "id": 7,
+    "title": {
+      "en": "Samsung Galaxy Book"
+    },
+    "description": {
+      "en": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+      "ru": "Описание на русском"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+  },
+  {
+    "id": 8,
+    "title": {
+      "en": "Microsoft Surface Laptop 4"
+    },
+    "description": {
+      "en": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen."
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+  },
+  {
+    "id": 9,
+    "title": {
+      "en": "Infinix INBOOK",
+      "ru": "Infinix"
+    },
+    "description": {
+      "en": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+      "ru": "Описание на русском"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+  }
+]
