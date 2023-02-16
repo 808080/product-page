@@ -1,14 +1,23 @@
 import { createBrowserRouter } from 'react-router-dom';
+import App from '../App';
 import NotFound from '../pages/404';
-import Home from '../pages/Home';
+import ProductPage from '../pages/Product';
 import Profile from '../pages/Profile';
 import Signup from '../pages/Signup';
+import { productLoader } from './loaders';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
-    errorElement: <NotFound />
+    element: <App />,
+    errorElement: <NotFound />,
+    children: [
+      {
+        path: 'products/:productId',
+        element: <ProductPage />,
+        loader: productLoader
+      },
+    ],
   },
   {
     path: '/signup',
