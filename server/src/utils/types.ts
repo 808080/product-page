@@ -32,4 +32,5 @@ export type Product = {
   title: IntlString;
   description: IntlString;
   thumbnail: string;
+  isPremium: boolean;
 };

@@ -8,7 +8,8 @@
       "en": "An apple mobile which is nothing like apple",
       "ru": "Телефон"
     },
-    "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+    "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+    "isPremium": true
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
       "en": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
       "ru": "Телефон без сим-карты"
     },
-    "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+    "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+    "isPremium": true
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
       "en": "Samsung's new variant which goes beyond Galaxy to the Universe",
       "ru": "Описание на русском"
     },
-    "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
+    "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+    "isPremium": true
   },
   {
     "id": 4,
@@ -40,7 +43,8 @@
     "description": {
       "en": "OPPO F19 is officially announced on April 2021."
     },
-    "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+    "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+    "isPremium": false
   },
   {
     "id": 5,
@@ -51,7 +55,8 @@
       "en": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
       "ru": "Описание на русском"
     },
-    "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg"
+    "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+    "isPremium": false
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
       "en": "MacBook Pro 2021 with mini-LED display may launch between September, November",
       "ru": "Мак Про 2021 with mini-LED display"
     },
-    "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png"
+    "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+    "isPremium": true
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
       "en": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
       "ru": "Описание на русском"
     },
-    "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+    "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+    "isPremium": true
   },
   {
     "id": 8,
@@ -84,7 +91,8 @@
     "description": {
       "en": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen."
     },
-    "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+    "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+    "isPremium": false
   },
   {
     "id": 9,
@@ -96,6 +104,95 @@
       "en": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
       "ru": "Описание на русском"
     },
-    "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+    "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+    "isPremium": false
+  },
+  {
+    "id": 10,
+    "title": {
+      "en": "HP Pavilion 15-DK1056WM",
+      "ru": "HP Pavilion"
+    },
+    "description": {
+      "en": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+      "ru": "Игровой ноутбук"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+    "isPremium": true
+  },
+  {
+    "id": 11,
+    "title": {
+      "en": "perfume Oil",
+      "ru": "Духи"
+    },
+    "description": {
+      "en": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
+      "ru": "Парфюм"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
+    "isPremium": false
+  },
+  {
+    "id": 12,
+    "title": {
+      "en": "Brown Perfume",
+      "ru": "Парфюм"
+    },
+    "description": {
+      "en": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
+      "ru": "Описание на русском"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+    "isPremium": false
+  },
+  {
+    "id": 13,
+    "title": {
+      "en": "Non-Alcoholic Concentrated Perfume Oil",
+      "ru": "Безалкогольные духи"
+    },
+    "description": {
+      "en": "Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil",
+      "ru": "Описание на русском"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/14/thumbnail.jpg",
+    "isPremium": false
+  },
+  {
+    "id": 14,
+    "title": {
+      "en": "Eau De Perfume Spray",
+      "ru": "Eau De Perfume"
+    },
+    "description": {
+      "en": "Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/15/thumbnail.jpg",
+    "isPremium": false
+  },
+  {
+    "id": 15,
+    "title": {
+      "en": "Tree Oil 30ml"
+    },
+    "description": {
+      "en": "Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/17/thumbnail.jpg",
+    "isPremium": false
+  },
+  {
+    "id": 16,
+    "title": {
+      "en": "Oil Free Moisturizer 100ml",
+      "ru": "Увлажнитель"
+    },
+    "description": {
+      "en": "Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.",
+      "ru": "Описание на русском"
+    },
+    "thumbnail": "https://i.dummyjson.com/data/products/18/thumbnail.jpg",
+    "isPremium": true
   }
 ]

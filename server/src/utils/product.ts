@@ -15,16 +15,14 @@ type ProductQuery =
   };
 
 
-const findInProducts = (products: Array<Product>, id: Product['id']) => {
-  const product = products.find((p) => p.id === id);
+const getAllProducts: GetManyProducts = () => readJSON('products')!;
+export const getRegularProducts: GetManyProducts = () => getAllProducts().filter((p) => !p.isPremium);
+export const getPremiumProducts: GetManyProducts = () => getAllProducts().filter((p) => p.isPremium);
+export const getProductById: GetOneProduct = (id) => {
+  const product = getAllProducts().find((p) => p.id === id);
   if (!product) throw new Error('Product not found');
   return product;
-}
-
-export const getProducts: GetManyProducts = () => readJSON('products')!;
-export const getPremiumProducts: GetManyProducts = () => readJSON('premium-products')!;
-export const getProductById: GetOneProduct = (id) => findInProducts(getProducts(), id);
-export const getPremiumProductById: GetOneProduct = (id) => findInProducts(getPremiumProducts(), id);
+};
 
 export const productQuery = (params: ProductQuery) => {
   try {

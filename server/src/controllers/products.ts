@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import { getPremiumProductById, getPremiumProducts, getProductById, getProducts, productQuery } from '../utils/product';
+import { getPremiumProducts, getProductById, getRegularProducts, productQuery } from '../utils/product';
 
 export const productRouterFactory = () =>
   Router()
     .get('/products', (req, res, next) => {
-      const result = productQuery({ queryMany: getProducts });
+      const result = productQuery({ queryMany: getRegularProducts });
       return res.status(result.status).json(result.data);
     })
 
@@ -15,10 +15,5 @@ export const productRouterFactory = () =>
 
     .get('/premium-products', (req, res, next) => {
       const result = productQuery({ queryMany: getPremiumProducts });
-      return res.status(result.status).json(result.data);
-    })
-
-    .get('/premium-product/:id', (req, res, next) => {
-      const result = productQuery({ queryOne: getPremiumProductById, id: +req.params.id });
       return res.status(result.status).json(result.data);
     });
