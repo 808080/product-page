@@ -26,7 +26,7 @@ export const getProductById: GetOneProduct = (id) => {
 
 export const productQuery = (params: ProductQuery) => {
   try {
-    const data = params.id !== undefined ? params.queryOne(params.id) : params.queryMany();
+    const data = typeof params.id === 'number' ? params.queryOne(params.id) : params.queryMany();
     return {
       status: 200,
       data: { success: true, data }

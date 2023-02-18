@@ -1,6 +1,7 @@
 export enum HTTPmethods {
   POST = 'POST',
-  GET = 'GET'
+  GET = 'GET',
+  PATCH = 'PATCH'
 };
 
 export type ResponseMessage<T = any> =

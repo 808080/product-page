@@ -45,12 +45,9 @@ export const updateUser = (user: User) => {
   }
 };
 
-export const login = (email: User['email'], password: User['password']) => {
-  try {
-    const user = getUsers()?.find((u) => u.email === email && u.password === password);
-    if (!user) throw new Error('Invalid e-mail or password');
-    return user;
-  } catch (err) {
-    console.log(err);
-  }
+export const login = (email: User['email'], pass: User['password']) => {
+  const user = getUsers()?.find((u) => u.email === email && u.password === pass);
+  if (!user) throw new Error('Invalid e-mail or password');
+  const { password, ...foundUser } = user;
+  return foundUser;
 };
