@@ -2,7 +2,7 @@
   "name": "product-page-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "tsnd --respawn src/index.ts"

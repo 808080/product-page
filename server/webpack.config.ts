@@ -7,7 +7,7 @@ const config: Configuration = {
   target: 'node',
   mode: 'production',
   entry: {
-    main: 'src/index.ts',
+    main: './src/index.ts',
   },
   module: {
     rules: [
