@@ -3,13 +3,13 @@ import thunk from 'redux-thunk';
 import { userReducer } from './reducers/user';
 
 const rootReducer = combineReducers({
-    user: userReducer,
+  user: userReducer,
 });
 
 export const store = configureStore({
-    reducer: rootReducer,
-    middleware: getDefaultMiddleware =>
-        getDefaultMiddleware().concat(thunk)
+  reducer: rootReducer,
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware().concat(thunk)
 });
 
 export type RootState = ReturnType<typeof store.getState>;

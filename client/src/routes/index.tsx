@@ -5,7 +5,7 @@ import Home from '../pages/Home';
 import ProductPage from '../pages/Product';
 import Profile from '../pages/Profile';
 import Signup from '../pages/Signup';
-import { productLoader } from './loaders';
+import { productLoader, userLoader } from './loaders';
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +28,7 @@ export const router = createBrowserRouter([
       {
         path: 'profile',
         element: <Profile />,
+        loader: userLoader
       },
     ],
   },

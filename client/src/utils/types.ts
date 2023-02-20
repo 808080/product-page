@@ -13,7 +13,7 @@ export type User = {
   lastName: string;
   email: string;
   country: string;
-  birthDate: Date;
+  birthDate: string;
   phone: string;
   password: string;
 };

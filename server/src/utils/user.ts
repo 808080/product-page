@@ -14,35 +14,27 @@ export const getUserById = (id: User['id']): UserDAO => {
 export const createUser = (user: UserDTO) => {
   const users = getUsers() || [];
 
-  try {
-    if (users.some(u => u.email === user.email)) {
-      throw new Error('This email is already taken');
-    }
-
-    const newUser = {
-      ...user,
-      id: crypto.randomUUID()
-    };
-
-    users.push(newUser);
-    rewriteJSON('users', users);
-
-    return getUserById(newUser.id);
-  } catch (err) {
-    console.log(err);
+  if (users.some(u => u.email === user.email)) {
+    throw new Error('This email is already taken');
   }
+
+  const newUser = {
+    ...user,
+    id: crypto.randomUUID()
+  };
+
+  users.push(newUser);
+  rewriteJSON('users', users);
+
+  return getUserById(newUser.id);
 };
 
-export const updateUser = (user: User) => {
-  try {
-    const users = getUsers()!;
-    const userIndex = users.findIndex((u) => u.id === user.id);
-    users[userIndex] = user;
-    rewriteJSON('users', users);
-    return getUserById(user.id);
-  } catch (err) {
-    console.log(err);
-  }
+export const updateUser = (user: UserDAO) => {
+  const users = getUsers()!;
+  const userIndex = users.findIndex((u) => u.id === user.id);
+  users[userIndex] = { ...users[userIndex], ...user };
+  rewriteJSON('users', users);
+  return getUserById(user.id);
 };
 
 export const login = (email: User['email'], pass: User['password']) => {

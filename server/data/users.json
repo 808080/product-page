@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "email": "wasd@asd.com",
+    "password": "qwe123QWE/",
+    "birthDate": "1999-12-31",
+    "country": "AT",
+    "firstName": "asdasdasd",
+    "lastName": "sada121",
+    "phone": "+1684-21312311",
+    "id": "9919e289-897f-44ff-a1b4-29ccdbcccffd"
+  }
+]
