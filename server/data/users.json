@@ -2,11 +2,31 @@
   {
     "email": "wasd@asd.com",
     "password": "qwe123QWE/",
-    "birthDate": "1999-12-31",
-    "country": "AT",
-    "firstName": "asdasdasd",
-    "lastName": "sada121",
-    "phone": "+1684-21312311",
+    "birthDate": "1988-12-31",
+    "country": "AD",
+    "firstName": "asdasda",
+    "lastName": "sada12",
+    "phone": "+672-21312311",
     "id": "9919e289-897f-44ff-a1b4-29ccdbcccffd"
+  },
+  {
+    "email": "test@mail.com",
+    "password": "asd123ASD-",
+    "birthDate": "1987-12-04",
+    "country": "MY",
+    "firstName": "Admin",
+    "lastName": "Test2",
+    "phone": "+502-121241255",
+    "id": "fc5c259c-7a60-4b31-8b7b-a1e6e4c4b664"
+  },
+  {
+    "email": "dasd@asdasd.dd",
+    "password": "qwe123QWE-",
+    "birthDate": "1222-02-12",
+    "country": "AU",
+    "firstName": "asd21d12d12",
+    "lastName": "12ds ndnnsdnf",
+    "phone": "+998-1246346578123",
+    "id": "d4c8f442-86d5-4bcc-932c-d6d37c75f9a9"
   }
 ]

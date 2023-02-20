@@ -42,8 +42,10 @@ const Header: FC<{ user: undefined | UserDAO }> = ({ user }) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
+                <Nav.Link as={Link} to='/'>Products</Nav.Link>
                 {user ?
                   <>
+                    <Nav.Link as={Link} to='/premium-products'>Premium products</Nav.Link>
                     <Nav.Link as={Link} to='/profile'>Profile</Nav.Link>
                     <Nav.Link onClick={handleLogout}>Log out</Nav.Link>
                   </> :

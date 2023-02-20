@@ -1,5 +1,6 @@
-import { useFormik } from 'formik';
 import { useEffect, useMemo, useState } from 'react';
+import { useFormik } from 'formik';
+import { useLoaderData } from 'react-router-dom';
 import { Row, Col, InputGroup, Alert, Button, Form } from 'react-bootstrap';
 import { useTypedDispatch, useTypedSelector } from '../../store/hooks';
 import { userDataFailed, setUser } from '../../store/reducers/user';
@@ -7,14 +8,18 @@ import httpRequest, { HTTPmethods } from '../../utils/httpRequest';
 import { UserDAO } from '../../utils/types';
 import countries from '../../countryCodes.json';
 import validate from './validation';
-import { useLoaderData } from 'react-router-dom';
+import Loader from '../../components/Loader';
 
 const Profile = () => {
 
   const loadedUser = useLoaderData() as UserDAO;
-  const { userError } = useTypedSelector(state => state.user);
+  const { data: stateUser, userError } = useTypedSelector(state => state.user);
   const dispatch = useTypedDispatch();
-  const { id, email, ...user } = loadedUser;
+  if (!stateUser) {
+    dispatch(setUser(loadedUser));
+    return <Loader />;
+  };
+  const { id, email, ...user } = stateUser;
   const tel = user.phone.split('-');
   const countryOptions = useMemo(() => countries, []);
 
