@@ -3,6 +3,7 @@ In root directory
 ```
 docker-compose up
 ```
+The page would be available at localhost:8080
 
 ## Run in dev mode
 Install dependecies in both client and server directories
