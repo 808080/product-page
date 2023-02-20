@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { ButtonGroup, Container, Dropdown, DropdownButton, Nav, Navbar } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTypedDispatch } from '../../store/hooks';
 import { logout } from '../../store/reducers/user';
@@ -15,6 +16,11 @@ type LogoutAction =
     success: false, error: string
   };
 
+const languages: Record<string, string> = {
+  en: 'English',
+  ru: 'Русский'
+};
+
 const Header: FC<{ user: undefined | UserDAO }> = ({ user }) => {
   const [show, setShow] = useState(false);
   const handleOpen = () => setShow(true);
@@ -22,6 +28,8 @@ const Header: FC<{ user: undefined | UserDAO }> = ({ user }) => {
   const navigate = useNavigate();
 
   const dispatch = useTypedDispatch();
+
+  const { t, i18n } = useTranslation();
 
   const handleLogout = async (e: React.MouseEvent) => {
     e.preventDefault();
@@ -42,18 +50,32 @@ const Header: FC<{ user: undefined | UserDAO }> = ({ user }) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link as={Link} to='/'>Products</Nav.Link>
+                <Nav.Link as={Link} to='/'>{t('Products')}</Nav.Link>
                 {user ?
                   <>
-                    <Nav.Link as={Link} to='/premium-products'>Premium products</Nav.Link>
-                    <Nav.Link as={Link} to='/profile'>Profile</Nav.Link>
-                    <Nav.Link onClick={handleLogout}>Log out</Nav.Link>
+                    <Nav.Link as={Link} to='/premium-products'>{t('PProducts')}</Nav.Link>
+                    <Nav.Link as={Link} to='/profile'>{t('Profile')}</Nav.Link>
+                    <Nav.Link onClick={handleLogout}>{t('Log out')}</Nav.Link>
                   </> :
                   <>
-                    <Nav.Link onClick={handleOpen}>Sign in</Nav.Link>
-                    <Nav.Link as={Link} to='/signup'>Sign up</Nav.Link>
+                    <Nav.Link onClick={handleOpen}>{t('Sign in')}</Nav.Link>
+                    <Nav.Link as={Link} to='/signup'>{t('Sign up')}</Nav.Link>
                   </>}
               </Nav>
+
+              <DropdownButton
+                as={ButtonGroup}
+                variant='primary'
+                title={t('Language')}
+              >
+                {Object.keys(languages).map((lang) => <Dropdown.Item
+                  key={lang}
+                  active={i18n.resolvedLanguage === lang}
+                  onClick={() => i18n.changeLanguage(lang)}
+                >
+                  {languages[lang]}
+                </Dropdown.Item>)}
+              </DropdownButton>
             </Navbar.Collapse>
           </Container>
         </Navbar>

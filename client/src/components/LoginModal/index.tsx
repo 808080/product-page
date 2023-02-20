@@ -1,6 +1,7 @@
 import { useFormik } from 'formik';
 import { FC } from 'react';
 import { Alert, Button, Form, Modal } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { useTypedDispatch, useTypedSelector } from '../../store/hooks';
 import { LoginData, loginFailed, setUser } from '../../store/reducers/user';
@@ -16,6 +17,7 @@ type Props = {
 const LoginModal: FC<Props> = ({ show, handleClose }) => {
   const dispatch = useTypedDispatch();
   const { error } = useTypedSelector(state => state.user);
+  const { t } = useTranslation();
 
   const formik = useFormik({
     initialValues: {
@@ -40,12 +42,12 @@ const LoginModal: FC<Props> = ({ show, handleClose }) => {
       onHide={handleClose}
     >
       <Modal.Header closeButton>
-        <Modal.Title>Sign in</Modal.Title>
+        <Modal.Title>{t('Sign in')}</Modal.Title>
       </Modal.Header>
       <Form onSubmit={formik.handleSubmit}>
         <Modal.Body>
           <Form.Group className='mb-3'>
-            <Form.Label>Email address</Form.Label>
+            <Form.Label>{t('Email address')}</Form.Label>
             <Form.Control
               type='email'
               name='email'
@@ -57,11 +59,11 @@ const LoginModal: FC<Props> = ({ show, handleClose }) => {
               onBlur={formik.handleBlur}
             />
             <Form.Control.Feedback type='invalid'>
-              {formik.errors.email}
+              {t(formik.errors.email || '')}
             </Form.Control.Feedback>
           </Form.Group>
           <Form.Group className='mb-3'>
-            <Form.Label>Password</Form.Label>
+            <Form.Label>{t('Password')}</Form.Label>
             <Form.Control
               type='password'
               name='password'
@@ -72,7 +74,7 @@ const LoginModal: FC<Props> = ({ show, handleClose }) => {
               onBlur={formik.handleBlur}
             />
             <Form.Control.Feedback type='invalid'>
-              {formik.errors.password}
+              {t(formik.errors.password || '')}
             </Form.Control.Feedback>
           </Form.Group>
 
@@ -86,10 +88,10 @@ const LoginModal: FC<Props> = ({ show, handleClose }) => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant='secondary' onClick={handleClose}>
-            Close
+            {t('Close')}
           </Button>
           <Button variant='primary' type='submit' disabled={formik.isSubmitting}>
-            Login
+            {t('Login')}
           </Button>
         </Modal.Footer>
       </Form>

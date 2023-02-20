@@ -8,11 +8,11 @@ const validate = (values: LoginData) => {
   const errors: Record<string, string> = {};
 
   if (!isEmail(values.email)) {
-    errors.email = 'Invalid e-mail';
+    errors.email = 'ErorrEmail';
   }
 
   if (!isPassword(values.password)) {
-    errors.password = 'Min length is 8 symbols. Password must contain atleast one digit, one capital and one small letter, a special symbol and no whitespaces';
+    errors.password = 'ErrorPassword';
   }
 
   return errors;
