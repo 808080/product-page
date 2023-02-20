@@ -14,3 +14,8 @@ To run client and server in dev environment use the following command in corresp
 ```
 npm run dev
 ```
+
+## TODO
+- enhance design
+- complete translation
+- configure nginx for the client
